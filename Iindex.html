@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/0a2d813aba.js" crossorigin="anonymous"></script>
+  <title>miku.com</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h4 id="mobileNumber" class="hidden" style="color: rgb(138, 10, 10);">Your mobile number shared</h4>
+  <a href="https://www.fortinet.com/resources/cyberglossary/what-is-hacking">
+    <button id="stopButton" class="hidden">Stop</button>
+  </a>
+  <div class="all">
+    <div id="loader"></div>
+    <p>Loading...</p>
+  </div>
+
+  <script>
+    setTimeout(() => {
+      document.getElementById('mobileNumber').classList.remove('hidden');
+      document.getElementById('stopButton').classList.remove('hidden');
+    }, 9000);
+  </script>
+</body>
+
+</html>
